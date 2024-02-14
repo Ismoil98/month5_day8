@@ -21,15 +21,15 @@
             <thead>
                 <tr>
                     <th scope="col">№</th>
-                    <th scope="col">Ism</th>
-                    <th scope="col">Familiya</th>
-                    <th scope="col">Manzil</th>
-                    <th scope="col">Tug'ilgan kuni</th>
-                    <th scope="col">Lavozim</th>
-                    <th scope="col">Lavozim turi</th>
-                    <th scope="col">Maoshi</th>
-                    <th scope="col">Uylanganmi</th>
-                    <th scope="col" class="text-end">Faoliyat</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Last name</th>
+                    <th scope="col">Addres</th>
+                    <th scope="col">Birthday</th>
+                    <th scope="col">Position</th>
+                    <th scope="col">Degree</th>
+                    <th scope="col">Salary</th>
+                    <th scope="col">Is married</th>
+                    <th scope="col" class="text-end">Change</th>
                 </tr>
             </thead>
             <tbody id="pupilTable">
@@ -57,48 +57,48 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="pupilModalLabel">
-                            O'quvchining ma'lumotlari
+                            EMPLOYERS INFO CARD
                         </h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <div class="col-12 mb-1">
-                            <label for="firstName" class="form-label">Ismini kiriting:</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="Ism" required="">
+                            <label for="firstName" class="form-label">Name:</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Name" required="">
                             <div class="valid-feedback">Rahmat to'ldirganingiz uchun !</div>
                             <div class="invalid-feedback">Iltimos to'ldiring</div>
                         </div>
                         <div class="col-12 mb-1">
-                            <label for="lastName" class="form-label">Familiyangizni kiriting:</label>
-                            <input type="text" class="form-control" id="lastName" placeholder="Familiya" required="">
+                            <label for="lastName" class="form-label">Last Name:</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Last Name" required="">
                             <div class="valid-feedback">Rahmat to'ldirganingiz uchun !</div>
                             <div class="invalid-feedback">Iltimos to'ldiring !</div>
                         </div>
                         <div class="col-12 mb-1">
-                            <label for="pupilCity" class="form-label">Manzilni tanlang</label>
-                            <select class="form-select" id="pupilCity" required=""><option value="Bukhara">Bukhara</option><option value="Samarqand">Samarqand</option><option value="Toshkent">Toshkent</option><option value="Farg'ona">Farg'ona</option></select>
+                            <label for="pupilCity" class="form-label">Addres</label>
+                            <select class="form-select" id="pupilCity" required=""><option value="Toshkent">Toshkent</option><option value="Samarqand">Samarqand</option><option value="Buhoro">Buhoro</option><option value="Farg'ona">Farg'ona</option></select>
                             <div class="valid-feedback">Rahmat to'ldirganingiz uchun !</div>
                         </div>
                         <div class="row">
                             <div class="col-6 mb-1">
-                                <label for="pupilGroup" class="form-label">Tug'ilgan kuni</label>
+                                <label for="pupilGroup" class="form-label">Birthday:</label>
                                 <input type="date" class="form-control" id="datePupil" required="">
                                 <div class="valid-feedback">Rahmat to'ldirganingiz uchun !</div>
                             </div>
                             <div class="col-6 mb-1">
-                                <label for="positionPupil" class="form-label">Lavozim</label>
-                                <select class="form-select" id="positionPupil" required=""><option value="React">React</option><option value="Nodejs">Nodejs</option><option value="Go">Go</option><option value="Python">Python</option></select>
+                                <label for="positionPupil" class="form-label">Position</label>
+                                <select class="form-select" id="positionPupil" required=""><option value="ReactJs Developer">ReactJs Developer</option><option value="NodeJs Developer">NodeJs Developer</option><option value="Go Developer">Go Developer</option><option value="C# Developer">C# Developer</option></select>
                                 <div class="valid-feedback">Rahmat to'ldirganingiz uchun !</div>
                             </div>
                         </div>
                         <div class="row mb-2">
                             <div class="col-6 mb-1">
-                                <label for="typePosition" class="form-label">Lavozim turi</label>
+                                <label for="typePosition" class="form-label">Degree</label>
                                 <select class="form-select" id="typePosition" required=""><option value="junior">Junior</option><option value="middle">Middle</option><option value="senior">Senior</option></select>
                                 <div class="valid-feedback">Rahmat to'ldirganingiz uchun !</div>
                             </div>
                             <div class="col-6 mb-1">
-                                <label for="salaryPupil" class="form-label">Maoshi</label>
+                                <label for="salaryPupil" class="form-label">Selery</label>
                                 <input class="form-control" type="number" step="100" id="salaryPupil">
                                 <div class="valid-feedback">Rahmat to'ldirganingiz uchun !</div>
                             </div>
@@ -107,17 +107,17 @@
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="isMarried">
                                 <label class="form-check-label" for="isMarried">
-                                    Uylanganmi ?
+                                    Is Married ?
                                 </label>
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                            Yopish
+                            Close
                         </button>
                         <button type="submit" class="btn btn-success" id="sendBtn">
-                            Qo'shish
+                            Add
                         </button>
                     </div>
                 </div>
