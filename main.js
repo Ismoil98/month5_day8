@@ -1,6 +1,6 @@
-const City = ["Bukhara", "Samarqand", "Toshkent", "Farg'ona"];
-const Position = ["React", "Nodejs", "Go", "Python"];
-const TypePosition = ["junior", "middle", "senior"];
+const City = ["Toshkent","Buhoro", "Samarqand", "Toshkent viloyati", "Farg'ona"];
+const Position = ["ReactJs Developer", "NodeJs Developer", "Go Developer", "C# Developer"];
+const TypePosition = ["Junior", "Middle", "Senior"];
 
 let pupilsJson = localStorage.getItem("pupils");
 let pupils = JSON.parse(pupilsJson) ?? [];
